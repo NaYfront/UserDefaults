@@ -30,5 +30,13 @@ class ViewController: UIViewController {
         
         print(userSettings)
     }
-
+    
+    private func createSettings() -> UserSettings {
+        return UserSettings(phone: "89274637060",
+                            email: "nayfront28@gmail.com",
+                            faceID: false,
+                            autoLogin: true,
+                            question: [.init(question: "question", answer: "answer")]
+        )
+    }
 }

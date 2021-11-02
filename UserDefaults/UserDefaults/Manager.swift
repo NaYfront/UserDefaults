@@ -23,12 +23,3 @@ struct SecurityQuestion: Codable {
 enum UserKeys {
     static let appSettings = "appSettings"
 }
-
-func createSettings() -> UserSettings {
-    return UserSettings(phone: "89274637060",
-                        email: "nayfront28@gmail.com",
-                        faceID: false,
-                        autoLogin: true,
-                        question: [.init(question: "question", answer: "answer")]
-    )
-}
